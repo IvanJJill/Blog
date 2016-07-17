@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    {% placeholder content %}
+        <div id="posts" class="container">
+
+            <section class="col-md-12 wow fadeIn">
+                <div class="post featured">
+                    <div class="row">
+                        <div class="col-md-6 media">
+                            <img src="img/photos/DeathtoStock_EnergyandSerenity31.jpg" class="img-responsive"/>
+                        </div>
+                        <div class="col-md-6 caption">
+                            <span class="post-tag">#music</span>
+                            <a href="post-image.html" class="post-title">Don't look at me</a>
+                            <span class="post-date">19 Sept 2015</span>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a
+                                        href="#">parturient montes</a>, nascetur ridiculus mus. Aenean commodo ligula
+                                eget dolor.
+                                <br/><br/>
+                                Cum sociis natoque penatibus et magnis dis parturient montes magnis dis parturient
+                                montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor.
+                            </p>
+                            <a class="btn btn-ada-dark" href="post-image.html">Read full post</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    {% endplaceholder %}
+{% endblock content %}
