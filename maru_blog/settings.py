@@ -194,18 +194,28 @@ CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
 
+# DATABASES = {
+#     'default': {
+#         'CONN_MAX_AGE': 0,
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'HOST': 'localhost',
+#         'NAME': 'project.db',
+#         'PASSWORD': '',
+#         'PORT': '',
+#         'USER': ''
+#     }
+# }
+# DATABASE
 DATABASES = {
     'default': {
-        'CONN_MAX_AGE': 0,
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'maru_blog',
+        'USER': 'isatsiuk',
+        'PASSWORD': 'ivanjjill',
         'HOST': 'localhost',
-        'NAME': 'project.db',
-        'PASSWORD': '',
         'PORT': '',
-        'USER': ''
     }
 }
-
 MIGRATION_MODULES = {
     'cmsplugin_filer_image': 'cmsplugin_filer_image.migrations_django',
     'cmsplugin_filer_file': 'cmsplugin_filer_file.migrations_django',
